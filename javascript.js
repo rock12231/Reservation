@@ -7,12 +7,16 @@ var div6 = document.getElementById("pay");
 var div7 = document.getElementById("ticket");
 div1.style.display = "block";
 
+// var id = document.getElementById("inemail").required;
+// var password = document.getElementById("inpassword").required;
+
+
 function showSignIn() {    
     if (div1.style.display === "block") {
         div1.style.display = "none";
         div3.style.display = "block";
         var id = document.getElementById("inemail").value;
-        var pass = document.getElementById("inpassword").value;
+        var password = document.getElementById("inpassword").value;
         document.getElementById("profile").innerHTML = id;
     }   
 
