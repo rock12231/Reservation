@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Reservation</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div>
+        <br>
+        <h1>Railway Reservation</h1>
+        <h4 id="profile"></h4>
+        <div class="container" id="signin">
+            <form>
+                <p>Sign In</p>
+                <input type="email" id="inemail" placeholder="Email"><br>
+                <input type="password" id="inpassword" placeholder="Password"><br>
+                <input type="button" value="Sign In" onclick="showSignIn()"><br>
+            </form>
+        </div>
+
+        <div class="container" id="signup">
+            <form>
+                <p>Sign Up</p>
+                <input type="email" placeholder="Email"><br>
+                <input type="password" placeholder="Password"><br>
+                <input type="button" value="Sign Up" onclick="showSignUp()"><br>
+                <a href="#">Forgot Password?</a>
+            </form>
+        </div>
+
+        <div class="container" id="search">
+            <form>
+                <p>Search</p>
+                <input type="text" placeholder="From"><br>
+                <input type="text" placeholder="To"><br>
+                <input type="date" id="date" name="Date"><br>
+                <input type="button" value="Find Train" onclick="Search()"><br>
+            </form>
+        </div>
+
+        <div class="container" id="list">
+            <form>
+                <p>List Of Train</p>
+                <table>
+                    <tr>
+                        <th>Train No.</th>
+                        <th>Train Name</th>
+                        <th>Departure Time</th>
+                        <th>Arrival Time</th>
+                        <th>Fare</th>
+                        <th>Book</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Kolkata Express</td>
+                        <td>10:00</td>
+                        <td>12:00</td>
+                        <td>Rs. 1000</td>
+                        <td><input type="button" value="Book" onclick="book()"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Kolkata Express</td>
+                        <td>10:00</td>
+                        <td>12:00</td>
+                        <td>Rs. 1000</td>
+                        <td><input type="button" value="Book" onclick="book()"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Kolkata Express</td>
+                        <td>10:00</td>
+                        <td>12:00</td>
+                        <td>Rs. 1000</td>
+                        <td><input type="button" value="Book" onclick="book()"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Kolkata Express</td>
+                        <td>10:00</td>
+                        <td>12:00</td>
+                        <td>Rs. 1000</td>
+                        <td><input type="button" value="Book" onclick="book()"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Kolkata Express</td>
+                        <td>10:00</td>
+                        <td>12:00</td>
+                        <td>Rs. 1000</td>
+                        <td><input type="button" value="Book" onclick="book()"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div class="container" id="booking">
+            <form>
+                <p>Booking</p>
+                <label for="">From</label>
+                <label for="">To</label>
+                <label for="">Date</label>
+                <label for="">Train No.</label>
+                <label for="">Train Name</label>
+                <label for="">Departure Time</label>
+                <label for="">Arrival Time</label>
+                <label for="">Fare</label>
+                <select name="cars" id="cars">
+                    <option value="2S">2S</option>
+                    <option value="SL">SL</option>
+                    <option value="3A">3A</option>
+                    <option value="2A">2A</option>
+                    <option value="1A">1A</option>
+                </select>
+                <input type="button" value="Book Now" onclick="bookNow()"><br>
+            </form>
+        </div>
+
+        <div class="container" id="pay">
+            <form>
+                <p>Pay</p>
+                <input type="text" placeholder="UPI ID"><br>
+                <input type="button" value="Pay Now" onclick="pay()"><br>
+            </form>
+        </div>
+
+        <div class="container" id="ticket">
+            <form>
+                <p>Booking</p>
+                <table class="ticket">
+                    <tr>
+                        <td><label for="">PNR</label></td>
+                        <td>123445</td>
+                        <td><label for="">From</label></td>
+                        <td>CNB</td>
+                    </tr>
+                    <tr>
+                        <td><label for="">To</label></td>
+                        <td>NDLS</td>
+                        <td><label for="">Date</label></td>
+                        <td>12/2/2022</td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Train Name</label></td>
+                        <td>Kolkata Express</td>
+                        <td><label for="">Departure Time</label></td>
+                        <td>10:00</td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Arrival Time</label></td>
+                        <td>12:00</td>
+                        <td><label for="">Fare</label></td>
+                        <td>Rs. 1000</td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Coach</label></td>
+                        <td>S7</td>
+                        <td><label for="">Seat No.</label></td>
+                        <td>A-23</td>
+                    </tr>
+    
+                </table>
+                <input type="button" value="Print" onclick="print()"><br>
+            </form>
+        </div>
+
+    </div>
+</body>
+<script src="./javascript.js"></script>
+
+</html>
